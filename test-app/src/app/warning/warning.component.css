@@ -1,0 +1,33 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  80%{
+      opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+@keyframes app-warning {
+    0% {background-color: blue; color: white;}
+    50% {background-color:red;color:yellow;}
+    100% {background-color: blue; color: white;}
+}
+
+div {
+    animation: 5s fadeIn;
+    animation-fill-mode: forwards;
+}
+
+h1 {
+    height: 150px;
+    background-color: blue; 
+    color: white;
+    animation-name: app-warning;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+}
